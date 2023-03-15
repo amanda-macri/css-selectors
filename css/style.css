@@ -23,13 +23,13 @@
   - add `color: purple;`
   - add `font-family: sans-serif;`
   - add `font-weight: bold;`*/
-  h1 p {
+  h1 + p {
     color: purple;
     font-family: sans-serif;
     font-weight: bold; 
   }
 
-  h1 p {
+  h1 + p {
     color: purple;
     font-family: sans-serif;
     font-weight: bold; 
@@ -37,19 +37,19 @@
 
 /*5. Use descendant selector to select the `div` inside `header`
   - add `margin: 1em 0;`*/
-  div > h {
+  h div {
     margin: 1em 0;
   }
 /*6. Select all `h2` tags
   - add `text-transform: uppercase;`
   - add `border-bottom: 2px solid #000;`*/  
-  h2* {
+  h2 {
     text-transform: uppercase;
     border-bottom: 2px solid #000;
   }
 /*7. Use the child selector to target the `p` tag immediately inside the `header`
   - add `font-size: 1.25rem;`*/
-  header > p :first-child {
+  header > p {
     font-size: 1.25rem;
   }
 
@@ -63,6 +63,9 @@
 
 /*9. Select the link with `rel="external"` attribute
   - add `color: purple;`*/ 
+  a {
+    color: purple
+  }
 
 /*10. Select the first section (using first of type) within the section using ID `experience`
   - add `border-bottom: 2px dashed #ccc;`*/
@@ -72,7 +75,7 @@
 
 /*11. Use the child selector to target the `section` tag immediately inside the `main`
   - add `margin-bottom: 3rem;`*/
-  main > section :first-child {
+  main > section {
     margin-bottom: 3rem;
   }
 
