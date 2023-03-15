@@ -1,18 +1,23 @@
-body {
-    background-color: #f2f2f2;
-    padding: 0 2em;
-}
-
 /*1. Select `body`
   - add `background-color: #f2f2f2;`
   - add `padding: 0 2em;*/
-  
+  body {
+    background-color: #f2f2f2;
+    padding: 0 2em;
+}
 /* 2. Select `h1`, `h2` and `h3`
   - add `font-family: sans-serif;`
   - add `margin-bottom: 0;`*/
+  h1, h2, h3 {
+    font-family: sans-serif;
+    margin-bottom: 0;
+  }
 
 /*3. Select all `p` tags
   - add `margin: .5em 0;*/
+  p* {
+    margin: .5em 0;
+  }
 
 /*4. Use an adjacent selector to get the `p` tags immediately beside the `h1` and `h3`tags
   - add `color: purple;`
@@ -21,11 +26,16 @@ body {
 
 /*5. Use descendant selector to select the `div` inside `header`
   - add `margin: 1em 0;`*/
-
+  header > div {
+    margin: 1em 0;
+  }
 /*6. Select all `h2` tags
   - add `text-transform: uppercase;`
   - add `border-bottom: 2px solid #000;`*/  
-
+  h2* {
+    text-transform: uppercase;
+    border-bottom: 2px solid #000;
+  }
 /*7. Use the child selector to target the `p` tag immediately inside the `header`
   - add `font-size: 1.25rem;`*/
 
@@ -44,18 +54,18 @@ body {
 
 /*12. Select the `strong` tag inside the `p` tag directly after the `h2` in the `section` directly inside the `main`
   - add `color: purple;`*/
-main > section > h2 ~ p:first-of-type strong {
+  main > section > h2 ~ p:first-of-type strong {
     color: purple;
 }
 
 /*13. Select every even `li`
   - add `color: purple;`*/
-li:nth-child(2) {
+  li:nth-child(2) {
     color: purple
 }
 
 /*14. Select the last `div` inside the `dl`
   - add `background-color: #ccc;`*/  
-dl > div:last-child {
+  dl > div:last-child {
     background-color: #ccc;
 }
