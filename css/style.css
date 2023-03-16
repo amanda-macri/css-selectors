@@ -69,7 +69,7 @@
 
 /*10. Select the first section (using first of type) within the section using ID `experience`
   - add `border-bottom: 2px dashed #ccc;`*/
-  #experience {
+  #experience section:nth-child(2) {
     border-bottom: 2px dashed #ccc;
   }
 
